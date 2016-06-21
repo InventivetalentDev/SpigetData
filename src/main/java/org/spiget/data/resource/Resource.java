@@ -8,6 +8,9 @@ import org.spiget.data.resource.version.ResourceVersion;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Represents a full resource
+ */
 @Data
 @NoArgsConstructor
 @AllArgsConstructor

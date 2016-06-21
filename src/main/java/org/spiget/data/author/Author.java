@@ -2,6 +2,9 @@ package org.spiget.data.author;
 
 import lombok.*;
 
+/**
+ * Represents a full author
+ */
 @Data
 @NoArgsConstructor
 @AllArgsConstructor

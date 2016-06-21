@@ -5,6 +5,9 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.ToString;
 
+/**
+ * Represents an author fetched from the resources list
+ */
 @Data
 @AllArgsConstructor
 @EqualsAndHashCode

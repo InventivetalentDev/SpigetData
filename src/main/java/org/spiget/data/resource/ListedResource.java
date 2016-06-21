@@ -8,6 +8,9 @@ import org.spiget.data.author.ListedAuthor;
 import org.spiget.data.category.ListedCategory;
 import org.spiget.data.resource.version.ListedResourceVersion;
 
+/**
+ * Represents a resource fetched from the resources list
+ */
 @Data
 @AllArgsConstructor
 @EqualsAndHashCode

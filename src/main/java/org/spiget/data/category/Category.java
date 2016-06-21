@@ -2,6 +2,9 @@ package org.spiget.data.category;
 
 import lombok.*;
 
+/**
+ * Represents a full category
+ */
 @Data
 @NoArgsConstructor
 @AllArgsConstructor

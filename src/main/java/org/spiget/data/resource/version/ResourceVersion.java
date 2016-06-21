@@ -3,6 +3,9 @@ package org.spiget.data.resource.version;
 import lombok.*;
 import org.spiget.data.resource.ResourceRating;
 
+/**
+ * Represents a full resource version
+ */
 @Data
 @NoArgsConstructor
 @AllArgsConstructor

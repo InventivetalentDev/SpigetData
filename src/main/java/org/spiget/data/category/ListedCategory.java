@@ -5,6 +5,9 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.ToString;
 
+/**
+ * Represents a category fetched from the resources list
+ */
 @Data
 @AllArgsConstructor
 @EqualsAndHashCode
