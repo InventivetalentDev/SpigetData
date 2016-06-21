@@ -18,12 +18,7 @@ import java.util.List;
 @ToString
 public class Resource {
 
-	public static final Resource NULL = new Resource() {{
-		this.id = -1;
-		this.name = "";
-		this.author = Author.NULL;
-		this.category = Category.NULL;
-	}};
+	public static final Resource NULL = new Resource(-1, "", Author.NULL, Category.NULL);
 
 	// Listed
 	protected int             id;
@@ -41,6 +36,17 @@ public class Resource {
 	protected String description;
 	protected String contributors;
 	protected List<String> testedVersions = new ArrayList<String>();
+
+	public Resource(int id, String name) {
+		this.id = id;
+		this.name = name;
+	}
+
+	public Resource(int id, String name, Author author, Category category) {
+		this(id, name);
+		this.author = author;
+		this.category = category;
+	}
 
 	public Resource(ListedResource base) {
 		this.id = base.id;

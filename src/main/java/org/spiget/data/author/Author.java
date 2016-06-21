@@ -12,14 +12,16 @@ import lombok.*;
 @ToString
 public class Author {
 
-	public static final Author NULL = new Author() {{
-		this.id = -1;
-		this.name = "";
-	}};
+	public static final Author NULL = new Author(-1, "");
 
 	// Listed
 	protected int    id;
 	protected String name;
+
+	public Author(int id, String name) {
+		this.id = id;
+		this.name = name;
+	}
 
 	public Author(ListedAuthor base) {
 		this.id = base.id;
