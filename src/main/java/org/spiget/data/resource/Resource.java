@@ -35,7 +35,8 @@ public class Resource extends ListedResource {
 	// Full
 	protected String description;
 	protected String contributors;
-	protected List<String> testedVersions = new ArrayList<String>();
+	protected List<String> testedVersions = new ArrayList<>();
+	protected List<ResourceVersion> versions = new ArrayList<>();
 
 	public Resource(int id) {
 		super(id);
