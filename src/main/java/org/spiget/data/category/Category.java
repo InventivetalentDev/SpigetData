@@ -18,10 +18,10 @@ public class Category {
 	protected int    id;
 	protected String name;
 
-	public Category(int id, String name) {
-		this.id = id;
-		this.name = name;
-	}
+//	public Category(int id, String name) {
+//		this.id = id;
+//		this.name = name;
+//	}
 
 	public Category(ListedCategory base) {
 		this.id = base.id;

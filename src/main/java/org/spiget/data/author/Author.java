@@ -18,10 +18,10 @@ public class Author {
 	protected int    id;
 	protected String name;
 
-	public Author(int id, String name) {
-		this.id = id;
-		this.name = name;
-	}
+//	public Author(int id, String name) {
+//		this.id = id;
+//		this.name = name;
+//	}
 
 	public Author(ListedAuthor base) {
 		this.id = base.id;
