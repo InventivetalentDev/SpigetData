@@ -1,6 +1,7 @@
 package org.spiget.data.author;
 
 import lombok.*;
+import org.spiget.data.resource.SpigetIcon;
 
 /**
  * Represents an author fetched from the resources list
@@ -12,7 +13,8 @@ import lombok.*;
 @ToString
 public class ListedAuthor {
 
-	protected int    id;
-	protected String name;
+	protected int        id;
+	protected String     name;
+	protected SpigetIcon icon;
 
 }
