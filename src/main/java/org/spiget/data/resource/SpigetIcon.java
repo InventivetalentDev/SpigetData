@@ -12,7 +12,7 @@ import lombok.ToString;
 @AllArgsConstructor
 @EqualsAndHashCode
 @ToString
-public class ResourceIcon {
+public class SpigetIcon {
 
 	protected String url;
 	protected String data;
