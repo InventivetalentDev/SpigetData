@@ -1,14 +1,18 @@
 package org.spiget.data.resource.version;
 
-import lombok.*;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.ToString;
 import org.spiget.data.resource.ResourceRating;
 
 /**
  * Represents a full resource version
  */
 @Data
-@EqualsAndHashCode(callSuper = true,doNotUseGetters = true)
-@ToString(callSuper = true,doNotUseGetters = true)
+@EqualsAndHashCode(callSuper = true,
+				   doNotUseGetters = true)
+@ToString(callSuper = true,
+		  doNotUseGetters = true)
 public class ResourceVersion extends ListedResourceVersion {
 
 	// Listed
@@ -20,20 +24,16 @@ public class ResourceVersion extends ListedResourceVersion {
 	protected ResourceRating resourceRating;
 	protected String         url;
 
-	public ResourceVersion(int id) {
-		super(id);
+	public ResourceVersion(String name) {
+		super(name);
 	}
 
-	public ResourceVersion(int id, String name) {
-		super(id, name);
-	}
-
-	public ResourceVersion(int id, String name, long releaseDate) {
-		super(id, name, releaseDate);
+	public ResourceVersion(String name, long releaseDate) {
+		super(name, releaseDate);
 	}
 
 	public ResourceVersion(ListedResourceVersion base) {
-		super(base.id, base.name, base.releaseDate);
+		super(base.name, base.releaseDate);
 	}
 
 }

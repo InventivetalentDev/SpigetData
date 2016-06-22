@@ -3,30 +3,25 @@ package org.spiget.data.resource.version;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.ToString;
-import org.spiget.data.IdReference;
 
 /**
  * Represents a resource version fetched from the resources list
  */
 @Data
-@EqualsAndHashCode(callSuper = true,doNotUseGetters = true)
-@ToString(callSuper = true,doNotUseGetters = true)
-public class ListedResourceVersion extends IdReference {
+@EqualsAndHashCode(callSuper = true,
+				   doNotUseGetters = true)
+@ToString(callSuper = true,
+		  doNotUseGetters = true)
+public class ListedResourceVersion {
 
 	protected String name;
 	protected long   releaseDate;
 
-	public ListedResourceVersion(int id) {
-		super(id);
-	}
-
-	public ListedResourceVersion(int id, String name) {
-		super(id);
+	public ListedResourceVersion(String name) {
 		this.name = name;
 	}
 
-	public ListedResourceVersion(int id, String name, long releaseDate) {
-		this(id, name);
+	public ListedResourceVersion(String name, long releaseDate) {
 		this.releaseDate = releaseDate;
 	}
 
