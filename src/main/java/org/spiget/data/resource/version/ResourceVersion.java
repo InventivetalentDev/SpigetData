@@ -7,24 +7,29 @@ import org.spiget.data.resource.ResourceRating;
  * Represents a full resource version
  */
 @Data
-@NoArgsConstructor
-@AllArgsConstructor
-@EqualsAndHashCode
-@ToString
-public class ResourceVersion {
+@EqualsAndHashCode(callSuper = true,doNotUseGetters = true)
+@ToString(callSuper = true,doNotUseGetters = true)
+public class ResourceVersion extends ListedResourceVersion {
 
 	// Listed
-	protected String name;
-	protected long   releaseDate;
+	//	protected String name;
+	//	protected long   releaseDate;
 
 	// Full
 	protected int            downloads;
 	protected ResourceRating resourceRating;
 	protected String         url;
 
+	public ResourceVersion(int id, String name) {
+		super(id, name);
+	}
+
+	public ResourceVersion(int id, String name, long releaseDate) {
+		super(id, name, releaseDate);
+	}
+
 	public ResourceVersion(ListedResourceVersion base) {
-		this.name = base.name;
-		this.releaseDate = base.releaseDate;
+		super(base.id, base.name, base.releaseDate);
 	}
 
 }

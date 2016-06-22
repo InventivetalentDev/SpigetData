@@ -1,6 +1,8 @@
 package org.spiget.data.resource;
 
-import lombok.*;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.ToString;
 import org.spiget.data.author.Author;
 import org.spiget.data.category.Category;
 import org.spiget.data.resource.version.ResourceVersion;
@@ -12,26 +14,23 @@ import java.util.List;
  * Represents a full resource
  */
 @Data
-@NoArgsConstructor
-@AllArgsConstructor
-@EqualsAndHashCode
-@ToString
-public class Resource {
+@EqualsAndHashCode(callSuper = true,doNotUseGetters = true)
+@ToString(callSuper = true,doNotUseGetters = true)
+public class Resource extends ListedResource {
 
 	public static final Resource NULL = new Resource(-1, "", Author.NULL, Category.NULL);
 
 	// Listed
-	protected int             id;
-	protected String          name;
-	protected String          tag;
-	protected ResourceVersion version;
-	protected Author          author;
-	protected Category        category;
-	protected ResourceRating  resourceRating;
-	protected SpigetIcon      icon;
-	protected long            releaseDate;
-	protected long            updateDate;
-	protected int             downloads;
+//	protected String          name;
+//	protected String          tag;
+//	protected ResourceVersion version;
+//	protected Author          author;
+//	protected Category        category;
+//	protected ResourceRating  resourceRating;
+//	protected SpigetIcon      icon;
+//	protected long            releaseDate;
+//	protected long            updateDate;
+//	protected int             downloads;
 
 	// Full
 	protected String description;
@@ -39,8 +38,7 @@ public class Resource {
 	protected List<String> testedVersions = new ArrayList<String>();
 
 	public Resource(int id, String name) {
-		this.id = id;
-		this.name = name;
+		super(id, name);
 	}
 
 	public Resource(int id, String name, Author author, Category category) {
@@ -50,7 +48,7 @@ public class Resource {
 	}
 
 	public Resource(ListedResource base) {
-		this.id = base.id;
+		super(base.id,base.name);
 		this.name = base.name;
 		this.tag = base.tag;
 		this.version = new ResourceVersion(base.version);

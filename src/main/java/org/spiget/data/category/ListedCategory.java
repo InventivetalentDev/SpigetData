@@ -1,20 +1,23 @@
 package org.spiget.data.category;
 
-import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.ToString;
+import org.spiget.data.IdReference;
 
 /**
  * Represents a category fetched from the resources list
  */
 @Data
-@AllArgsConstructor
-@EqualsAndHashCode
-@ToString
-public class ListedCategory {
+@EqualsAndHashCode(callSuper = true,doNotUseGetters = true)
+@ToString(callSuper = true,doNotUseGetters = true)
+public class ListedCategory extends IdReference {
 
-	protected int id;
 	protected String name;
+
+	public ListedCategory(int id, String name) {
+		super(id);
+		this.name = name;
+	}
 
 }

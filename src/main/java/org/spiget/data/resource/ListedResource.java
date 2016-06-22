@@ -1,6 +1,9 @@
 package org.spiget.data.resource;
 
-import lombok.*;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.ToString;
+import org.spiget.data.IdReference;
 import org.spiget.data.author.ListedAuthor;
 import org.spiget.data.category.ListedCategory;
 import org.spiget.data.resource.version.ListedResourceVersion;
@@ -9,13 +12,10 @@ import org.spiget.data.resource.version.ListedResourceVersion;
  * Represents a resource fetched from the resources list
  */
 @Data
-@NoArgsConstructor
-@AllArgsConstructor
-@EqualsAndHashCode
-@ToString
-public class ListedResource {
+@EqualsAndHashCode(callSuper = true,doNotUseGetters = true)
+@ToString(callSuper = true,doNotUseGetters = true)
+public class ListedResource extends IdReference {
 
-	protected int                   id;
 	protected String                name;
 	protected String                tag;
 	protected ListedResourceVersion version;
@@ -26,5 +26,11 @@ public class ListedResource {
 	protected long                  releaseDate;
 	protected long                  updateDate;
 	protected int                   downloads;
+
+	public ListedResource(int id, String name) {
+		super(id);
+		this.name = name;
+	}
+
 
 }
