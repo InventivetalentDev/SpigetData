@@ -22,6 +22,7 @@ public class ListedResource {
 	protected ListedAuthor          author;
 	protected ListedCategory        category;
 	protected ResourceRating        resourceRating;
+	protected ResourceIcon          icon;
 	protected long                  releaseDate;
 	protected long                  updateDate;
 	protected int                   downloads;

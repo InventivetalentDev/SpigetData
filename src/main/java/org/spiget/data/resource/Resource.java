@@ -28,6 +28,7 @@ public class Resource {
 	protected Author          author;
 	protected Category        category;
 	protected ResourceRating  resourceRating;
+	protected ResourceIcon    icon;
 	protected long            releaseDate;
 	protected long            updateDate;
 	protected int             downloads;
