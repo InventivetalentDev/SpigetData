@@ -11,7 +11,7 @@ import lombok.ToString;
 @Data
 @AllArgsConstructor
 @EqualsAndHashCode
-@ToString
+@ToString(exclude = "data")
 public class SpigetIcon {
 
 	protected String url;
