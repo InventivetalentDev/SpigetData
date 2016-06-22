@@ -19,6 +19,10 @@ public class Author extends ListedAuthor {
 	//	protected String     name;
 	//	protected SpigetIcon icon;
 
+	public Author(int id) {
+		super(id);
+	}
+
 	public Author(int id, String name) {
 		super(id, name);
 	}

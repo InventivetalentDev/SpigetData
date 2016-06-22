@@ -17,6 +17,10 @@ public class ListedAuthor extends IdReference {
 	protected String     name;
 	protected SpigetIcon icon;
 
+	public ListedAuthor(int id) {
+		super(id);
+	}
+
 	public ListedAuthor(int id, String name) {
 		super(id);
 		this.name = name;

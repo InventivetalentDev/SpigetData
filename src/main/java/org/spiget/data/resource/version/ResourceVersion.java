@@ -20,6 +20,10 @@ public class ResourceVersion extends ListedResourceVersion {
 	protected ResourceRating resourceRating;
 	protected String         url;
 
+	public ResourceVersion(int id) {
+		super(id);
+	}
+
 	public ResourceVersion(int id, String name) {
 		super(id, name);
 	}

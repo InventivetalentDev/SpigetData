@@ -1,6 +1,8 @@
 package org.spiget.data.resource.version;
 
-import lombok.*;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.ToString;
 import org.spiget.data.IdReference;
 
 /**
@@ -13,6 +15,10 @@ public class ListedResourceVersion extends IdReference {
 
 	protected String name;
 	protected long   releaseDate;
+
+	public ListedResourceVersion(int id) {
+		super(id);
+	}
 
 	public ListedResourceVersion(int id, String name) {
 		super(id);

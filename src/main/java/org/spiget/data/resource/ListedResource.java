@@ -27,6 +27,10 @@ public class ListedResource extends IdReference {
 	protected long                  updateDate;
 	protected int                   downloads;
 
+	public ListedResource(int id) {
+		super(id);
+	}
+
 	public ListedResource(int id, String name) {
 		super(id);
 		this.name = name;

@@ -15,6 +15,10 @@ public class ListedCategory extends IdReference {
 
 	protected String name;
 
+	public ListedCategory(int id) {
+		super(id);
+	}
+
 	public ListedCategory(int id, String name) {
 		super(id);
 		this.name = name;

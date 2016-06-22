@@ -16,6 +16,10 @@ public class Category extends ListedCategory {
 	//	protected int    id;
 	//	protected String name;
 
+	public Category(int id) {
+		super(id);
+	}
+
 	public Category(int id, String name) {
 		super(id, name);
 	}
