@@ -1,10 +1,7 @@
 package org.spiget.data;
 
 import com.google.gson.annotations.SerializedName;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.EqualsAndHashCode;
-import lombok.ToString;
+import lombok.*;
 
 @Data
 @AllArgsConstructor
@@ -12,6 +9,6 @@ import lombok.ToString;
 @ToString
 public class IdReference {
 
-	@SerializedName(value = "_id") public final int id;
+	@Getter @SerializedName(value = "_id") public final int id;
 
 }
