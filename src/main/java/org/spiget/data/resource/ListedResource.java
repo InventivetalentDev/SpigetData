@@ -1,9 +1,6 @@
 package org.spiget.data.resource;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.EqualsAndHashCode;
-import lombok.ToString;
+import lombok.*;
 import org.spiget.data.author.ListedAuthor;
 import org.spiget.data.category.ListedCategory;
 import org.spiget.data.resource.version.ListedResourceVersion;
@@ -12,6 +9,7 @@ import org.spiget.data.resource.version.ListedResourceVersion;
  * Represents a resource fetched from the resources list
  */
 @Data
+@NoArgsConstructor
 @AllArgsConstructor
 @EqualsAndHashCode
 @ToString
