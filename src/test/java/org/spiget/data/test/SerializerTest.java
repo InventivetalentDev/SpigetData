@@ -17,7 +17,7 @@ import java.util.Arrays;
 
 import static org.junit.Assert.assertEquals;
 
-public class SerializerTests {
+public class SerializerTest {
 
 	final Gson gson = new GsonBuilder().serializeNulls().create();
 
