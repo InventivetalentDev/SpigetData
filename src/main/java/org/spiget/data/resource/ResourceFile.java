@@ -1,13 +1,13 @@
 package org.spiget.data.resource;
 
-import lombok.Data;
-import lombok.EqualsAndHashCode;
-import lombok.ToString;
+import lombok.*;
 
 /**
  * Contains information about the resource file for the resource's current version
  */
 @Data
+@NoArgsConstructor
+@AllArgsConstructor
 @EqualsAndHashCode(doNotUseGetters = true)
 @ToString(doNotUseGetters = true)
 public class ResourceFile  {
