@@ -20,6 +20,7 @@ public class ListedResourceVersion {
 	}
 
 	public ListedResourceVersion(String name, long releaseDate) {
+		this.name = name;
 		this.releaseDate = releaseDate;
 	}
 
