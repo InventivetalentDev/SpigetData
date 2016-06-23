@@ -10,9 +10,10 @@ import lombok.*;
 @AllArgsConstructor
 @EqualsAndHashCode(doNotUseGetters = true)
 @ToString(doNotUseGetters = true)
-public class ResourceFile  {
+public class ResourceFile {
 
 	protected String type;
-	protected String size;
+	protected float  size;
+	protected String sizeUnit;
 	protected String url;
 }

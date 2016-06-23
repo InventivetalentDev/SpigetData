@@ -15,30 +15,33 @@ import java.util.List;
  * Represents a full resource
  */
 @Data
-@EqualsAndHashCode(callSuper = true,doNotUseGetters = true)
-@ToString(callSuper = true,doNotUseGetters = true)
+@EqualsAndHashCode(callSuper = true,
+				   doNotUseGetters = true)
+@ToString(callSuper = true,
+		  doNotUseGetters = true)
 public class Resource extends ListedResource {
 
 	public static final Resource NULL = new Resource(-1, "", Author.NULL, Category.NULL);
 
 	// Listed
-//	protected String          name;
-//	protected String          tag;
-//	protected ResourceVersion version;
-//	protected Author          author;
-//	protected Category        category;
-//	protected ResourceRating  resourceRating;
-//	protected SpigetIcon      icon;
-//	protected long            releaseDate;
-//	protected long            updateDate;
-//	protected int             downloads;
+	//	protected String          name;
+	//	protected String          tag;
+	//	protected ResourceVersion version;
+	//	protected Author          author;
+	//	protected Category        category;
+	//	protected ResourceRating  resourceRating;
+	//	protected SpigetIcon      icon;
+	//	protected long            releaseDate;
+	//	protected long            updateDate;
+	//	protected int             downloads;
 
 	// Full
-	protected String description;
-	protected String contributors;
-	protected List<String> testedVersions = new ArrayList<>();
-	protected List<ResourceVersion> versions = new ArrayList<>();
-	protected List<ResourceUpdate> updates = new ArrayList<>();
+	protected ResourceFile file;
+	protected String       description;
+	protected String       contributors;
+	protected List<String>          testedVersions = new ArrayList<>();
+	protected List<ResourceVersion> versions       = new ArrayList<>();
+	protected List<ResourceUpdate>  updates        = new ArrayList<>();
 
 	public Resource(int id) {
 		super(id);
@@ -55,7 +58,7 @@ public class Resource extends ListedResource {
 	}
 
 	public Resource(ListedResource base) {
-		super(base.id,base.name);
+		super(base.id, base.name);
 		this.name = base.name;
 		this.tag = base.tag;
 		this.version = new ResourceVersion(base.version);
