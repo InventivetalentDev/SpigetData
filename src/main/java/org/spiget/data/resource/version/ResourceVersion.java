@@ -24,16 +24,16 @@ public class ResourceVersion extends ListedResourceVersion {
 	protected Rating rating;
 	protected String url;
 
-	public ResourceVersion(String name) {
-		super(name);
+	public ResourceVersion(int id, String name) {
+		super(id, name);
 	}
 
-	public ResourceVersion(String name, long releaseDate) {
-		super(name, releaseDate);
+	public ResourceVersion(int id, String name, long releaseDate) {
+		super(id, name, releaseDate);
 	}
 
 	public ResourceVersion(ListedResourceVersion base) {
-		super(base.name, base.releaseDate);
+		super(base.id, base.name, base.releaseDate);
 	}
 
 }

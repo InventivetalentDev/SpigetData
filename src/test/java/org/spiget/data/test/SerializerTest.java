@@ -39,7 +39,7 @@ public class SerializerTest {
 		ListedResource listedResource = new ListedResource(12345, "listed resource");
 		listedResource.setAuthor(new ListedAuthor(6643, "inventivetalent"));
 		listedResource.setCategory(new ListedCategory(22, "Mechanics"));
-		listedResource.setVersion(new ListedResourceVersion("1.0"));
+		listedResource.setVersion(new ListedResourceVersion(0, "1.0"));
 		assertEquals(12345, listedResource.getId());
 		assertEquals("listed resource", listedResource.getName());
 
