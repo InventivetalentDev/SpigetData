@@ -5,6 +5,7 @@ import lombok.EqualsAndHashCode;
 import lombok.ToString;
 import org.spiget.data.author.Author;
 import org.spiget.data.category.Category;
+import org.spiget.data.resource.update.ResourceUpdate;
 import org.spiget.data.resource.version.ResourceVersion;
 
 import java.util.ArrayList;
@@ -37,6 +38,7 @@ public class Resource extends ListedResource {
 	protected String contributors;
 	protected List<String> testedVersions = new ArrayList<>();
 	protected List<ResourceVersion> versions = new ArrayList<>();
+	protected List<ResourceUpdate> updates = new ArrayList<>();
 
 	public Resource(int id) {
 		super(id);
