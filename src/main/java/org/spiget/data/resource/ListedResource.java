@@ -21,7 +21,7 @@ public class ListedResource extends IdReference {
 	protected ListedResourceVersion version;
 	protected ListedAuthor          author;
 	protected ListedCategory        category;
-	protected ResourceRating        resourceRating;
+	protected Rating                rating;
 	protected SpigetIcon            icon;
 	protected long                  releaseDate;
 	protected long                  updateDate;

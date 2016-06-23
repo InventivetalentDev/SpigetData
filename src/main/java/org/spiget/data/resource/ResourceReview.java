@@ -10,12 +10,12 @@ import org.spiget.data.author.Author;
 @ToString(doNotUseGetters = true)
 public class ResourceReview {
 
-	protected Author         author;// Not necessarily an author, but a reference to the member who posted this review
-	protected ResourceRating rating;
-	protected String         message;
-	protected String         version;
-	protected long           date;
-	protected Author         responseAuthor;
-	protected String         responseMessage;
+	protected Author author;// Not necessarily an author, but a reference to the member who posted this review
+	protected Rating rating;
+	protected String message;
+	protected String version;
+	protected long   date;
+	protected Author responseAuthor;
+	protected String responseMessage;
 
 }

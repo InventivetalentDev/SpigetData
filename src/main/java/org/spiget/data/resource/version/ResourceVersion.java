@@ -3,7 +3,7 @@ package org.spiget.data.resource.version;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.ToString;
-import org.spiget.data.resource.ResourceRating;
+import org.spiget.data.resource.Rating;
 
 /**
  * Represents a full resource version
@@ -20,9 +20,9 @@ public class ResourceVersion extends ListedResourceVersion {
 	//	protected long   releaseDate;
 
 	// Full
-	protected int            downloads;
-	protected ResourceRating resourceRating;
-	protected String         url;
+	protected int    downloads;
+	protected Rating rating;
+	protected String url;
 
 	public ResourceVersion(String name) {
 		super(name);

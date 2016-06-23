@@ -59,7 +59,7 @@ public class Resource extends ListedResource {
 		this.version = new ResourceVersion(base.version);
 		this.author = new Author(base.author);
 		this.category = new Category(base.category);
-		this.resourceRating = base.resourceRating;
+		this.rating = base.rating;
 		this.releaseDate = base.releaseDate;
 		this.updateDate = base.updateDate;
 		this.downloads = base.downloads;
