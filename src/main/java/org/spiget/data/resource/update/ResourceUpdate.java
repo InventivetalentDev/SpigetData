@@ -1,16 +1,21 @@
 package org.spiget.data.resource.update;
 
-import lombok.*;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.ToString;
 import org.spiget.data.IdReference;
 
 @Data
-@EqualsAndHashCode(callSuper = true,doNotUseGetters = true)
-@ToString(callSuper = true,doNotUseGetters = true)
+@EqualsAndHashCode(callSuper = true,
+				   doNotUseGetters = true)
+@ToString(callSuper = true,
+		  doNotUseGetters = true)
 public class ResourceUpdate extends IdReference {
 
 	protected String title;
 	protected String description;
 	protected long   date;
+	protected int    likes;
 
 	public ResourceUpdate(int id) {
 		super(id);
