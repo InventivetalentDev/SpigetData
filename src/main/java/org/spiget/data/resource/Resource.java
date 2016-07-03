@@ -36,6 +36,7 @@ public class Resource extends ListedResource {
 	//	protected int             downloads;
 
 	// Full
+	protected boolean      external;
 	protected ResourceFile file;
 	protected String       description;
 	protected String       contributors;
