@@ -9,7 +9,9 @@ import org.spiget.data.resource.update.ResourceUpdate;
 import org.spiget.data.resource.version.ResourceVersion;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * Represents a full resource
@@ -43,6 +45,7 @@ public class Resource extends ListedResource {
 	protected List<String>          testedVersions = new ArrayList<>();
 	protected List<ResourceVersion> versions       = new ArrayList<>();
 	protected List<ResourceUpdate>  updates        = new ArrayList<>();
+	protected Map<String, String>   links          = new HashMap<>();
 
 	public Resource(int id) {
 		super(id);
