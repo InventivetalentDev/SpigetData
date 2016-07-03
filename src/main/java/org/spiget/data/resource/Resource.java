@@ -25,19 +25,6 @@ public class Resource extends ListedResource {
 
 	public static final Resource NULL = new Resource(-1, "", Author.NULL, Category.NULL);
 
-	// Listed
-	//	protected String          name;
-	//	protected String          tag;
-	//	protected ResourceVersion version;
-	//	protected Author          author;
-	//	protected Category        category;
-	//	protected ResourceRating  resourceRating;
-	//	protected SpigetIcon      icon;
-	//	protected long            releaseDate;
-	//	protected long            updateDate;
-	//	protected int             downloads;
-
-	// Full
 	protected boolean      external;
 	protected ResourceFile file;
 	protected String       description;

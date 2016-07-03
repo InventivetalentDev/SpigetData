@@ -10,8 +10,10 @@ import org.spiget.data.resource.SpigetIcon;
  * Represents an author fetched from the resources list
  */
 @Data
-@EqualsAndHashCode(callSuper = true,doNotUseGetters = true)
-@ToString(callSuper = true,doNotUseGetters = true)
+@EqualsAndHashCode(callSuper = true,
+				   doNotUseGetters = true)
+@ToString(callSuper = true,
+		  doNotUseGetters = true)
 public class ListedAuthor extends IdReference {
 
 	protected String     name;

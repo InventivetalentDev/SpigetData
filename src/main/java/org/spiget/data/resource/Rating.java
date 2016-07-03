@@ -15,5 +15,4 @@ public class Rating {
 	protected int   count;
 	protected float average;
 
-
 }

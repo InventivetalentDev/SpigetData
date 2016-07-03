@@ -12,8 +12,10 @@ import org.spiget.data.resource.version.ListedResourceVersion;
  * Represents a resource fetched from the resources list
  */
 @Data
-@EqualsAndHashCode(callSuper = true,doNotUseGetters = true)
-@ToString(callSuper = true,doNotUseGetters = true)
+@EqualsAndHashCode(callSuper = true,
+				   doNotUseGetters = true)
+@ToString(callSuper = true,
+		  doNotUseGetters = true)
 public class ListedResource extends IdReference {
 
 	protected String                name;
@@ -35,6 +37,5 @@ public class ListedResource extends IdReference {
 		super(id);
 		this.name = name;
 	}
-
 
 }

@@ -9,8 +9,10 @@ import org.spiget.data.IdReference;
  * Represents a category fetched from the resources list
  */
 @Data
-@EqualsAndHashCode(callSuper = true,doNotUseGetters = true)
-@ToString(callSuper = true,doNotUseGetters = true)
+@EqualsAndHashCode(callSuper = true,
+				   doNotUseGetters = true)
+@ToString(callSuper = true,
+		  doNotUseGetters = true)
 public class ListedCategory extends IdReference {
 
 	protected String name;

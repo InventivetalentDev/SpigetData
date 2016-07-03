@@ -15,11 +15,6 @@ import org.spiget.data.resource.Rating;
 		  doNotUseGetters = true)
 public class ResourceVersion extends ListedResourceVersion {
 
-	// Listed
-	//	protected String name;
-	//	protected long   releaseDate;
-
-	// Full
 	protected int    downloads;
 	protected Rating rating;
 	protected String url;
