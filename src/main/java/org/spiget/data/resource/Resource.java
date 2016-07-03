@@ -42,6 +42,7 @@ public class Resource extends ListedResource {
 	protected ResourceFile file;
 	protected String       description;
 	protected String       contributors;
+	protected int          likes;
 	protected List<String>          testedVersions = new ArrayList<>();
 	protected List<ResourceVersion> versions       = new ArrayList<>();
 	protected List<ResourceUpdate>  updates        = new ArrayList<>();
