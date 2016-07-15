@@ -12,6 +12,7 @@ public class Webhook {
 	@SerializedName(value = "_id") public String id;
 	public                                String url;
 	public                                int    failedConnections;
+	public                                int    failStatus;
 	public Set<String> events = new HashSet<>();
 
 	public boolean applyEvent(String event) {
