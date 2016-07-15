@@ -2,12 +2,14 @@ package org.spiget.data.webhook.event.author;
 
 import com.google.gson.JsonObject;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 import org.spiget.data.author.Author;
 import org.spiget.data.webhook.event.WebhookEvent;
 
 @Data
+@EqualsAndHashCode(callSuper = true)
 public class NewAuthor extends WebhookEvent {
-	
+
 	private final Author author;
 
 	public NewAuthor(Author author) {
