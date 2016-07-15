@@ -7,7 +7,8 @@ import org.spiget.data.IdReference;
 import org.spiget.data.author.Author;
 
 @Data
-@EqualsAndHashCode(doNotUseGetters = true)
+@EqualsAndHashCode(doNotUseGetters = true,
+				   callSuper = true)
 @ToString(doNotUseGetters = true)
 public class ResourceReview extends IdReference {
 
