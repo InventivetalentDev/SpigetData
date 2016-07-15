@@ -8,11 +8,11 @@ import org.spiget.data.webhook.event.WebhookEvent;
 
 @Data
 @EqualsAndHashCode(callSuper = true)
-public class NewAuthor extends WebhookEvent {
+public class NewAuthorEvent extends WebhookEvent {
 
 	private final Author author;
 
-	public NewAuthor(Author author) {
+	public NewAuthorEvent(Author author) {
 		super("new-author");
 		this.author = author;
 	}

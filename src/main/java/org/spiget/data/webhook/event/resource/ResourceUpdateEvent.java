@@ -8,11 +8,11 @@ import org.spiget.data.webhook.event.WebhookEvent;
 
 @Data
 @EqualsAndHashCode(callSuper = true)
-public class ResourceUpdate extends WebhookEvent {
+public class ResourceUpdateEvent extends WebhookEvent {
 
 	private final Resource resource;
 
-	public ResourceUpdate(Resource resource) {
+	public ResourceUpdateEvent(Resource resource) {
 		super("resource-update");
 		this.resource = resource;
 	}
