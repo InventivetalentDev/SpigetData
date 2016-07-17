@@ -15,7 +15,6 @@ public class ResourceReview {
 	protected String       message;
 	protected String       version;
 	protected long         date;
-	protected ListedAuthor responseAuthor;
 	protected String       responseMessage;
 
 }
