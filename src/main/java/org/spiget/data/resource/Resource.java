@@ -33,6 +33,7 @@ public class Resource extends ListedResource {
 	protected List<String>          testedVersions = new ArrayList<>();
 	protected List<ResourceVersion> versions       = new ArrayList<>();
 	protected List<ResourceUpdate>  updates        = new ArrayList<>();
+	protected List<ResourceReview>  reviews        = new ArrayList<>();
 	protected Map<String, String>   links          = new HashMap<>();
 
 	public Resource(int id) {
