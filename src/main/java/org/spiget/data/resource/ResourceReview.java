@@ -20,4 +20,8 @@ public class ResourceReview extends IdReference {
 	protected long         date;
 	protected String       responseMessage;
 
+	public ResourceReview(int id) {
+		super(id);
+	}
+
 }
