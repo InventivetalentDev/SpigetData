@@ -17,7 +17,6 @@ public class ResourceVersion extends ListedResourceVersion {
 
 	protected int    downloads;
 	protected Rating rating;
-	protected String url;
 
 	public ResourceVersion(int id, String name) {
 		super(id, name);
