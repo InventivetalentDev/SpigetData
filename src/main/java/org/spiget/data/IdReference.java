@@ -9,6 +9,7 @@ import lombok.*;
 @ToString
 public class IdReference {
 
-	@Getter @SerializedName(value = "_id") public final int id;
+	@Getter @SerializedName(value = "_id",
+							alternate = "id") public final int id;
 
 }
