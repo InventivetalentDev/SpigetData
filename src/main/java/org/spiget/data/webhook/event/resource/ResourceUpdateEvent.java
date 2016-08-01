@@ -11,15 +11,19 @@ import org.spiget.data.webhook.event.WebhookEvent;
 public class ResourceUpdateEvent extends WebhookEvent {
 
 	private final Resource resource;
+	private final String   newVersion;
 
-	public ResourceUpdateEvent(Resource resource) {
+	public ResourceUpdateEvent(Resource resource, String newVersion) {
 		super("resource-update");
 		this.resource = resource;
+		this.newVersion = newVersion;
 	}
 
 	@Override
 	public JsonObject dataToJson() {
-		return GSON.toJsonTree(this.resource).getAsJsonObject();
+		JsonObject jsonObject = GSON.toJsonTree(this.resource).getAsJsonObject();
+		jsonObject.addProperty("newVersion", newVersion);
+		return jsonObject;
 	}
 
 }
