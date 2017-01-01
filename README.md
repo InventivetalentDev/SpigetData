@@ -1,6 +1,6 @@
 # SpigetData
 
-[![Build Status](http://ci.inventivetalent.org/view/Spiget/job/Spiget-Data/badge/icon)](http://ci.inventivetalent.org/view/Spiget/job/Spiget-Data/)
+[![Build Status](https://travis-ci.org/SpiGetOrg/SpigetData.svg?branch=master)](https://travis-ci.org/SpiGetOrg/SpigetData)
 
 Data objects for Spiget v2
 
