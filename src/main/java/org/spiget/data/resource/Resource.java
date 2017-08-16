@@ -27,6 +27,8 @@ public class Resource extends ListedResource {
 
 	protected boolean      external;
 	protected boolean      premium;
+	protected double       price;
+	protected String       currency;
 	protected ResourceFile file;
 	protected String       description;
 	protected String       contributors;
