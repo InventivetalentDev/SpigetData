@@ -26,9 +26,6 @@ public class Resource extends ListedResource {
 	public static final Resource NULL = new Resource(-1, "", Author.NULL, Category.NULL);
 
 	protected boolean      external;
-	protected boolean      premium;
-	protected double       price;
-	protected String       currency;
 	protected ResourceFile file;
 	protected String       description;
 	protected String       contributors;

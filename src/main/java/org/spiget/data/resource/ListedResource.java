@@ -28,6 +28,9 @@ public class ListedResource extends IdReference {
 	protected long                  releaseDate;
 	protected long                  updateDate;
 	protected int                   downloads;
+	protected boolean               premium;
+	protected double                price;
+	protected String                currency;
 
 	public ListedResource(int id) {
 		super(id);
