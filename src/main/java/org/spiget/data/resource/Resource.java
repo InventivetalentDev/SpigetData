@@ -62,6 +62,9 @@ public class Resource extends ListedResource {
 		this.releaseDate = base.releaseDate;
 		this.updateDate = base.updateDate;
 		this.downloads = base.downloads;
+		this.premium = base.premium;
+		this.price = base.price;
+		this.currency = base.currency;
 	}
 
 }
