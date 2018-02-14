@@ -17,6 +17,7 @@ public class ListedResourceVersion extends IdReference/* The ID isn't really use
 
 	protected String name;
 	protected long   releaseDate;
+	protected int    resource;
 
 	public ListedResourceVersion(int id) {
 		super(id);

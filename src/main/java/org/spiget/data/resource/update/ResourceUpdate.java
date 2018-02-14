@@ -16,6 +16,7 @@ public class ResourceUpdate extends IdReference {
 	protected String description;
 	protected long   date;
 	protected int    likes;
+	protected int    resource;
 
 	public ResourceUpdate(int id) {
 		super(id);

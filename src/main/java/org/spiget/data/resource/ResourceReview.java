@@ -19,6 +19,7 @@ public class ResourceReview extends IdReference {
 	protected String       version;
 	protected long         date;
 	protected String       responseMessage;
+	protected int          resource;
 
 	public ResourceReview(int id) {
 		super(id);
