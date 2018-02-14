@@ -30,6 +30,8 @@ public class Resource extends ListedResource {
 	protected String       description;
 	protected String       contributors;
 	protected int          likes;
+	protected String       sourceCodeLink;
+	protected String       donationLink;
 	protected List<String>          testedVersions = new ArrayList<>();
 	protected List<ResourceVersion> versions       = new ArrayList<>();
 	protected List<ResourceUpdate>  updates        = new ArrayList<>();
