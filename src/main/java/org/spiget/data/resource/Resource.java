@@ -3,6 +3,7 @@ package org.spiget.data.resource;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.ToString;
+import org.jetbrains.annotations.NotNull;
 import org.spiget.data.author.Author;
 import org.spiget.data.category.Category;
 import org.spiget.data.resource.update.ResourceUpdate;
@@ -53,7 +54,7 @@ public class Resource extends ListedResource {
 		this.category = category;
 	}
 
-	public Resource(ListedResource base) {
+	public Resource(@NotNull ListedResource base) {
 		super(base.id, base.name);
 		this.name = base.name;
 		this.tag = base.tag;

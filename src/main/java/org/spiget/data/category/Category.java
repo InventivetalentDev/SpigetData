@@ -3,6 +3,7 @@ package org.spiget.data.category;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.ToString;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * Represents a full category
@@ -24,7 +25,7 @@ public class Category extends ListedCategory {
 		super(id, name);
 	}
 
-	public Category(ListedCategory base) {
+	public Category(@NotNull ListedCategory base) {
 		super(base.id, base.name);
 	}
 

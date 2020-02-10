@@ -3,6 +3,7 @@ package org.spiget.data.resource.version;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.ToString;
+import org.jetbrains.annotations.NotNull;
 import org.spiget.data.resource.Rating;
 
 /**
@@ -26,7 +27,7 @@ public class ResourceVersion extends ListedResourceVersion {
 		super(id, name, releaseDate);
 	}
 
-	public ResourceVersion(ListedResourceVersion base) {
+	public ResourceVersion(@NotNull ListedResourceVersion base) {
 		super(base.id, base.name, base.releaseDate);
 	}
 

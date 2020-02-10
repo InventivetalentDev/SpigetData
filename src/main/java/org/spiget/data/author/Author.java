@@ -3,6 +3,7 @@ package org.spiget.data.author;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.ToString;
+import org.jetbrains.annotations.NotNull;
 import org.spiget.data.resource.SpigetIcon;
 
 /**
@@ -29,7 +30,7 @@ public class Author extends ListedAuthor {
 		super(id, name, icon);
 	}
 
-	public Author(ListedAuthor base) {
+	public Author(@NotNull ListedAuthor base) {
 		super(base.id, base.name, base.icon);
 	}
 
