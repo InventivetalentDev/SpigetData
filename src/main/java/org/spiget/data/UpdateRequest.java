@@ -12,5 +12,6 @@ public class UpdateRequest {
 	protected boolean versions;
 	protected boolean updates;
 	protected boolean reviews;
+	protected boolean delete;
 
 }
