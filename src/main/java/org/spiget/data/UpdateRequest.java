@@ -7,6 +7,7 @@ import lombok.EqualsAndHashCode;
 @EqualsAndHashCode(doNotUseGetters = true)
 public class UpdateRequest {
 
+	protected String  type;
 	protected int     requestedId;
 	protected long    requested;
 	protected boolean versions;

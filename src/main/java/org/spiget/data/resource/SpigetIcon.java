@@ -15,4 +15,7 @@ public class SpigetIcon {
 	protected String url;
 	protected String data;
 
+	protected String info;
+	protected String hash;
+
 }

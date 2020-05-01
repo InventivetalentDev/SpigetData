@@ -6,6 +6,9 @@ import lombok.ToString;
 import org.jetbrains.annotations.NotNull;
 import org.spiget.data.resource.SpigetIcon;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * Represents a full author
  */
@@ -17,6 +20,8 @@ import org.spiget.data.resource.SpigetIcon;
 public class Author extends ListedAuthor {
 
 	public static final Author NULL = new Author(-1, "");
+
+	protected Map<String, String> identities = new HashMap<>();
 
 	public Author(int id) {
 		super(id);
@@ -32,6 +37,10 @@ public class Author extends ListedAuthor {
 
 	public Author(@NotNull ListedAuthor base) {
 		super(base.id, base.name, base.icon);
+	}
+
+	public String getIdentity(String key) {
+		return this.identities.get(key);
 	}
 
 }
