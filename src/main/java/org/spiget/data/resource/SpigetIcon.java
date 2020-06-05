@@ -18,4 +18,9 @@ public class SpigetIcon {
 	protected String info;
 	protected String hash;
 
+	public SpigetIcon(String url, String data) {
+		this.url = url;
+		this.data = data;
+	}
+
 }
