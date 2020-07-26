@@ -42,8 +42,8 @@ public class ResourceVersion extends ListedResourceVersion {
         Calendar calendar = Calendar.getInstance();
         if (date != null) { calendar.setTime(date); }
         String dateString = calendar.get(Calendar.YEAR) + "" + Util.pad((calendar.get(Calendar.MONTH) + 1), 2) + Util.pad(calendar.get(Calendar.DAY_OF_MONTH), 2);
-        String stringA = "16" + authorId + "" + resourceId + "" + Util.pad(versionNameNumber, 5);
-        String stringB = "16" + resourceId + "" + dateString + "" + Util.pad(updateCount, 2);
+        String stringA = "16" + authorId + "" + resourceId + "" + Util.trim(Util.pad(versionNameNumber, 5), 5);
+        String stringB = "16" + resourceId + "" + dateString + "" + Util.trim(Util.pad(updateCount, 2),3);
         return new UUID(Long.parseLong(stringA), Long.parseLong(stringB));
     }
 
