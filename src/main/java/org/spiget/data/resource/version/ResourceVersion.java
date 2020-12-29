@@ -5,6 +5,7 @@ import lombok.EqualsAndHashCode;
 import lombok.ToString;
 import org.jetbrains.annotations.NotNull;
 import org.spiget.data.Util;
+import org.spiget.data.UuidHolder;
 import org.spiget.data.resource.Rating;
 
 import java.util.Calendar;
@@ -19,7 +20,7 @@ import java.util.UUID;
                    doNotUseGetters = true)
 @ToString(callSuper = true,
           doNotUseGetters = true)
-public class ResourceVersion extends ListedResourceVersion {
+public class ResourceVersion extends ListedResourceVersion implements UuidHolder {
 
 	protected UUID 	 uuid;
     protected int    downloads;

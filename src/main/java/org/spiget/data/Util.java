@@ -14,7 +14,7 @@ public class Util {
     }
 
     public static String trim(String s, int l) {
-        if(s.length()<=l)return s;
+        if (s.length() <= l) { return s; }
         return s.substring(s.length() - l);
     }
 
