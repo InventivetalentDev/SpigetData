@@ -34,6 +34,7 @@ public class Resource extends ListedResource {
 	protected String       sourceCodeLink;
 	protected String       donationLink;
 	protected String       supportedLanguages;
+	protected String	   nativeVersion;
 	protected List<String>          testedVersions = new ArrayList<>();
 	protected List<ResourceVersion> versions       = new ArrayList<>();
 	protected List<ResourceUpdate>  updates        = new ArrayList<>();
