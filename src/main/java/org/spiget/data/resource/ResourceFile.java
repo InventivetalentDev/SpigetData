@@ -16,4 +16,6 @@ public class ResourceFile {
 	protected float  size;
 	protected String sizeUnit;
 	protected String url;
+	protected String externalUrl;
+
 }
