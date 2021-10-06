@@ -28,8 +28,9 @@ public class Resource extends ListedResource {
 
 	protected boolean      external;
 	protected ResourceFile file;
-	protected String       description;
-	protected String       contributors;
+	protected String description;
+	protected String documentation;
+	protected String contributors;
 	protected int          likes;
 	protected String       sourceCodeLink;
 	protected String       donationLink;
